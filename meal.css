@@ -136,6 +136,7 @@ h2 {
         background-image: url("New folder/table top.jpg");
         background-repeat: no-repeat;
         background-size:auto;
+        background-attachment: local;
         padding: 20px;
 }
 
