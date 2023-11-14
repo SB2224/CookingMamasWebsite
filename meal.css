@@ -2,7 +2,10 @@ body{
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
-    background-image: url ("New folder/wood.jpg");
+    background-image: url("New folder/table top.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        resize:both;
 }
 
 
