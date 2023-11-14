@@ -119,6 +119,7 @@ body{
 
 @keyframes sunrise{
     0% {left: 0px; bottom:0 px;}
+
     100%{right: 500px; bottom:50 px;}
 }
 
@@ -132,7 +133,7 @@ h2 {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 60px;
         grid-row-gap: 60px;
-        background-color: azure;
+        background-image: url ("https://static.vecteezy.com/system/resources/previews/000/396/954/original/pink-checkered-pattern-seamless-background-vector.jpg");
         padding: 20px;
 }
 
