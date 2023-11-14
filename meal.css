@@ -2,7 +2,10 @@ body{
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
-    background-color: rgb(78, 46, 3);
+    background-image: url ("New folder/wood.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    resize:both;
 }
 
 
