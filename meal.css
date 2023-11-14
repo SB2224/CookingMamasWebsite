@@ -133,7 +133,7 @@ h2 {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 60px;
         grid-row-gap: 60px;
-        background-image: url ("https://static.vecteezy.com/system/resources/previews/000/396/954/original/pink-checkered-pattern-seamless-background-vector.jpg");
+        background-color: blueviolet;
         padding: 20px;
 }
 
