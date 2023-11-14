@@ -141,6 +141,14 @@ h2 {
         background-size:cover;
         resize:both;
         padding: 20px;
+
+        
+        --mask: 
+        linear-gradient(#000 0 0) 50%/calc(100% - 40.70px) calc(100% - 40.70px) no-repeat,
+        radial-gradient(farthest-side,#000 98%,#0000) 0 0/44px 44px round;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+        
 }
 
 #rtitle{
