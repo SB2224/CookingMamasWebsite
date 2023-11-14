@@ -133,7 +133,7 @@ h2 {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 60px;
         grid-row-gap: 60px;
-        background-color: blueviolet;
+        background-image: url("table top.jpg");
         padding: 20px;
 }
 
