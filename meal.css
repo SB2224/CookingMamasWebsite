@@ -14,7 +14,7 @@ body{
     background-color: #C8E5F2;
     grid-area: 1/ 1 / 2 / 2;
     border-radius: 10px;
-    border-width: 50px;
+    border-width: thick;
     border-style: dotted;
     border-color: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
