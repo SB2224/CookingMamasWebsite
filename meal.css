@@ -135,8 +135,8 @@ h2 {
         grid-row-gap: 60px;
         background-image: url("New folder/table top.jpg");
         background-repeat: no-repeat;
-        background-size:auto;
-        background-attachment: local;
+        background-size:cover;
+        resize:both;
         padding: 20px;
 }
 
