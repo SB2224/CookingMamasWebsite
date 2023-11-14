@@ -134,6 +134,7 @@ h2 {
         grid-column-gap: 60px;
         grid-row-gap: 60px;
         background-image: url("New folder/table top.jpg");
+        background-repeat: no-repeat;
         padding: 20px;
 }
 
