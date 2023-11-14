@@ -1,0 +1,155 @@
+body{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: antiquewhite;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+[class*="individual"] {
+    padding: 10px;
+    background-color: gray;
+    grid-area: 1/ 1 / 2 / 2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+
+}
+
+.individual:hover{
+    transform: scale(1.1);
+}
+
+[class*="individual1"] {
+    padding: 10px;
+    background-color: gray;
+    grid-area: 1/ 2 / 2 / 3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+
+}
+
+.individual1:hover{
+    transform: scale(1.1);
+}
+
+[class*="individual2"] {
+    padding: 10px;
+    background-color: gray;
+    grid-area: 1/ 3 / 2 / 4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.individual2:hover{
+    transform: scale(1.1);
+}
+
+[class*="individual3"] {
+    padding: 10px;
+    background-color: gray;
+    grid-area: 2 / 1 / 3 / 2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.individual3:hover{
+    transform: scale(1.1);
+}
+
+[class*="individual4"] {
+    padding: 10px;
+    background-color: gray;
+    grid-area: 2 / 2 / 3 / 3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+    }
+
+.individual4:hover{
+    transform: scale(1.1);
+}
+
+[class*="individual5"] {
+    padding: 10px;
+    background-color: gray;
+    grid-area:2 / 3 / 3 / 4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+}
+
+.individual5:hover{
+    transform: scale(1.1);
+}
+
+[class*="mealName"] {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 5%;
+}
+
+#breakfast{
+    text-align: right;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 100px;
+}
+
+[class*="sun"]{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 45px;
+    display: block;
+    animation-name: sunrise;
+    animation-duration: 2s;
+}
+
+@keyframes sunrise{
+    0% {left: 0px; bottom:0 px;}
+    100%{right: 500px; bottom:50 px;}
+}
+
+h2 {
+    text-align: center; 
+}
+
+[class*="column1"]{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+        background-color: azure;
+        padding: 20px;
+}
+
+#rtitle{
+    text-align: right;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#description{
+    text-align: right;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#mealPic{
+    height: 25px;
+    width:  25px;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+
