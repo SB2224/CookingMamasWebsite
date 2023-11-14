@@ -148,6 +148,9 @@ h2 {
         radial-gradient(farthest-side,#000 98%,#0000) 0 0/44px 44px round;
         -webkit-mask: var(--mask);
         mask: var(--mask);
+
+        border-color: azure;
+        border-width: thick;
         
 }
 
