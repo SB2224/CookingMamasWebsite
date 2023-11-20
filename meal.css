@@ -33,19 +33,40 @@ body{
     border-color: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: transform .2s;
-
 }
 
 .individual:hover{
     transform: scale(1.1);
 }
 
-a:hover {
+.heart:hover {
     transform: scale(1.1);
   }
 
-a{
-    background-image: url ("New folder/heart.png");
+#heart{
+    width:7%;
+    height:10%;
+    border-color: solid palevioletred;
+
+    overflow-y: visible;
+    position: absolute;
+    left:0;
+    z-index: 1;
+    bottom: -20px;
+    transform: rotateY(180deg);
+}
+
+#heart2{
+    width:7%;
+    height:10%;
+    border-color: solid palevioletred;
+
+    overflow-y: visible;
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    float: right;
+    right:0;
 }
 
 [class*="individual1"] {
@@ -186,15 +207,16 @@ h2 {
         background-size:cover;
         resize:both;
         padding: 50px;
-
-        border-color: azure;
-        border-width: thick;
         
         --mask: 
         linear-gradient(#000 0 0) 50%/calc(100% - 40.70px) calc(100% - 40.70px) no-repeat,
         radial-gradient(farthest-side,#000 98%,#0000) 0 0/44px 44px round;
         -webkit-mask: var(--mask);
         mask: var(--mask);
+
+        z-index: -1;
+        margin: auto;
+      
         
 }
 
