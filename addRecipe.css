@@ -18,3 +18,30 @@
     height: 300px;
 }
 
+
+@font-face {
+    font-family: video game;
+    src: url("gameplay/Gameplay.ttf");
+  }
+
+/* font for the "breakfast meal
+*/
+@font-face {
+    font-family: meal;
+    src: url("arial-rounded-mt-std-bold/Arial Rounded MT Std Bold.otf");
+  }
+  
+
+body{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-image: url("New folder/yellow2.jpg");
+}
+
+/* common text
+*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
