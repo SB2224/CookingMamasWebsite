@@ -23,6 +23,46 @@ body{
     border-radius: 25px;
 }
 
+a {
+
+    color: rgb(255, 243, 150);
+    -webkit-text-stroke: 1px darkblue;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+input {
+    background-color: rgb(194, 237, 255);
+    border: 5px solid darkblue;
+    border-radius: 30px;
+    color: darkblue;
+    padding: 15px;
+}
+
+.searchIcon {
+    /*opacity: 0.5; */
+    height: 95%;
+    width: 50%;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-family: meal;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.links {
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 15px;
+    height: 500px;
+}
+
 button:hover,input:hover {
     background-color: rgb(246, 239, 239);
 }
@@ -37,69 +77,5 @@ button {
     font-size: 20px;
     font-weight: 900;
     border-radius: 10px;
-}
 
-a {
-
-    color: rgb(255, 243, 150);
-    -webkit-text-stroke: 1px darkblue;
-    font-size: 20px;
-    font-weight: 900;
-    text-decoration: none;
-
-}
-
-input {
-    background-color: rgb(194, 237, 255);
-    border: 5px solid darkblue;
-    border-radius: 10px;
-    color: darkblue;
-}
-
-h1 {
-    text-align: center;
-    font-family: meal;
-    background-color: aliceblue;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.description {
-    background-color: aliceblue;
-    padding: 50px;
-    border-radius: 15px;
-    height: 500px;
-}
-
-.breakfast-bowl{
-    float: right;
-    height: 175x;
-    width: 200px;
-}
-
-.pasta-lunch {
-    height: 150px;
-    width: 210px;
-    position: relative;
-    left: 770px;
-    top: 180px;
-}
-
-.dinner-meal {
-    height: 30%;
-    position: relative;
-    float: right;
-    top: 330px;
-    left: 200px;
-}
-
-footer {
-    text-align: center;
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aliceblue;
-    color: black;
-    font-style: italic;
 }
