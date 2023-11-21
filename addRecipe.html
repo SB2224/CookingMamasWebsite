@@ -2,6 +2,7 @@
 <html>
     <head>
         <Title>Add Recipes</Title>
+        <link rel = "stylesheet" type = "text/css" href="addRecipe.css" title = "style">
     </head>
     <body>
 
@@ -26,6 +27,16 @@
             <label for ="sdescription"> Short description: </label> <br>
             <textarea type = "text" id = "sdescription" name = "sdescription"></textarea>
             <br>
+            <p>Meal Category</p>
+            <input type ="radio" id = "bfastCategory" name = "mealCategory" value = "Breakfast">
+            <label for ="bfastCategory">Breakfast</label> <br>
+            <input type ="radio" id = "lunchCategory" name = "mealCategory" value = "Lunch">
+            <label for ="lunchCategory">Lunch</label> <br>
+            <input type ="radio" id = "dinnerCategory" name = "mealCategory" value = "Dinner">
+            <label for ="dinnerCategory">Dinner</label><br>
+            <br>
+            <br>
+
             <label for ="keRequirements">Kitchen Equipment Requirements:  </label> <br>
             <textarea id="keRequirements" name ="keRequirements"> </textarea>
             <br>
@@ -34,6 +45,9 @@
             <br>
             <label for ="procedure">Procedure:  </label> <br>
             <textarea id="procedure" name ="procedure"> </textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
         </form>
          </div>
     </body>
