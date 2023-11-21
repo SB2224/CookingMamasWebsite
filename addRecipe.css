@@ -91,3 +91,24 @@ footer {
     color: black;
     font-style: italic;
 }
+
+#sdescription{
+    width: 500px;
+    height: 100px;
+}
+
+#keRequirements{
+  width: 500px;
+  height: 300px;;
+}
+
+#ingredients{
+  width: 500px;
+  height: 300px;;
+}
+
+#procedure{
+  width: 500px;
+  height: 300px;
+}
+
