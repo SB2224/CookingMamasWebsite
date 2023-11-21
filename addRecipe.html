@@ -2,30 +2,56 @@
 <html>
     <head>
         <Title>Add Recipes</Title>
-        <link rel="stylesheet" href="addRecipe.css"/>
+        <link rel = "stylesheet" type = "text/css" href="addRecipe.css" title = "style">
     </head>
     <body>
 
         <div class="navigation">
 
-        <input type="text" placeholder="Search.">
-        <button id="index"><a href="index.html">Homepage</a></button>
-        <button id="addRecipe"><a href="addRecipe.html">Add Recipe </a></button>
-        <button id="breakfastButton"><a href="breakfast.html">Breakfast </a></button>
-        <button id="lunchButton"><a href="lunch.html"></a>Lunch</button>
-        <button id="dinnerButton"><a href="dinner.html"></a>Dinner</button>
-      
+            <input type="text" placeholder="Search.">
+            <button id="index"><a href="index.html">Homepage</a></button>
+            <button id="addRecipe"><a href="addRecipe.html">Add Recipe </a></button>
+            <button id="breakfastButton"><a href="breakfast.html">Breakfast </a></button>
+            <button id="lunchButton"><a href="lunch.html">Lunch</a></button>
+            <button id="dinnerButton"><a href="dinner.html">Dinner</a></button>
+    
           </div>
 
         <h1>Add Recipes</h1> 
         <hr>
-        <div class="description">
-            <p>Description Of Recipes Here:</p>
-            <!--Can add a recipe of each image and link it to the picture-->
             <img src="New folder/breakfast-bowl.jpg" alt="breakfast-bowl" class="breakfast-bowl"/> 
             <img src="New folder/pasta-lunch.jpg" alt="pasta" class="pasta-lunch"/>
             <img src="New folder/dinner-meal.jpg" alt="dinner" class="dinner-meal"/>
-        </div>
-        <footer>Contact Information</footer>
+        <div class = "page">
+        <form>
+            <label for ="recipeTutle"> Name of Recipe: </label> <br>
+            <input type = "text" id = "recipeTitle" name = "recipeTitle"><br>
+            <br>
+            <label for ="sdescription"> Short description: </label> <br>
+            <textarea type = "text" id = "sdescription" name = "sdescription"></textarea>
+            <br>
+            <p>Meal Category</p>
+            <input type ="radio" id = "bfastCategory" name = "mealCategory" value = "Breakfast">
+            <label for ="bfastCategory">Breakfast</label> <br>
+            <input type ="radio" id = "lunchCategory" name = "mealCategory" value = "Lunch">
+            <label for ="lunchCategory">Lunch</label> <br>
+            <input type ="radio" id = "dinnerCategory" name = "mealCategory" value = "Dinner">
+            <label for ="dinnerCategory">Dinner</label><br>
+            <br>
+            <br>
+
+            <label for ="keRequirements">Kitchen Equipment Requirements:  </label> <br>
+            <textarea id="keRequirements" name ="keRequirements"> </textarea>
+            <br>
+            <label for ="ingredients">Ingredients:  </label> <br>
+            <textarea id="ingredients" name ="ingredients"> </textarea>
+            <br>
+            <label for ="procedure">Procedure:  </label> <br>
+            <textarea id="procedure" name ="procedure"> </textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+         </div>
     </body>
 </html>
