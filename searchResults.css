@@ -1,0 +1,81 @@
+@font-face {
+    font-family: video game;
+    src: url("gameplay/Gameplay.ttf");
+  }
+
+@font-face {
+    font-family: meal;
+    src: url("arial-rounded-mt-std-bold/Arial Rounded MT Std Bold.otf");
+  }
+
+body{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-image: url("New folder/yellow2.jpg");
+}
+
+.navigation {
+    background-color:#C8E5F2;
+    padding: 2%;
+    margin: 0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+a {
+
+    color: rgb(255, 243, 150);
+    -webkit-text-stroke: 1px darkblue;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+input {
+    background-color: rgb(194, 237, 255);
+    border: 5px solid darkblue;
+    border-radius: 30px;
+    color: darkblue;
+    padding: 15px;
+}
+
+.searchIcon {
+    /*opacity: 0.5; */
+    height: 95%;
+    width: 50%;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-family: meal;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.links {
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 15px;
+    height: 500px;
+}
+
+button:hover,input:hover {
+    background-color: rgb(246, 239, 239);
+}
+
+button {
+
+    border: 5px solid darkblue;
+    background-color: rgb(194, 237, 255);
+    color: rgb(255, 243, 150);
+    -webkit-text-stroke: 1px darkblue;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10px;
+
+}
