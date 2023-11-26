@@ -1,0 +1,70 @@
+/* recepie list
+*/
+@font-face {
+    font-family: video game;
+    src: url("gameplay/Gameplay.ttf");
+  }
+
+/* font for the "breakfast meal
+*/
+@font-face {
+    font-family: meal;
+    src: url("arial-rounded-mt-std-bold/Arial Rounded MT Std Bold.otf");
+  }
+  
+
+body{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-image: url("New folder/yellow2.jpg");
+}
+
+/* common text
+*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+[class *="recipe"] {
+    background-color: azure;
+    padding: 3%;
+    border-radius: 10px;
+    z-index:-10;
+    text-align: center;
+    top: -50px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#category{
+    text-align: center; 
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: meal;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(8, 116, 8);
+    color: yellowgreen;
+}
+
+#keRequirements{
+    background: pink;
+    border-radius: 5px;
+}
+
+#ingredients{
+    background: pink;
+    border-radius: 5px;
+}
+
+#procedure{
+    background: pink;
+    border-radius: 5px;
+}

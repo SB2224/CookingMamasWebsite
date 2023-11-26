@@ -1,0 +1,13 @@
+Greetings!
+
+Here is the rough draft of our code. Please open the index file for the homepage first. The navigation bar above contains all the tabs of the website. 
+
+Here is what are team wishes to achieve:
+1. The Add Recipe page, through forum style, must save the data the user inputs.
+2. The input data must be stored in a server.
+3. The data then will be categorized on which tab is must appear.
+4. The data then should be formatted according to the Recipe Page.
+
+We would appreciate you input and advice on our plans. 
+
+Thank you. 
