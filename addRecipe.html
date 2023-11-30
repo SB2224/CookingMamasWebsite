@@ -3,6 +3,7 @@
     <head>
         <Title>Add Recipes</Title>
         <link rel = "stylesheet" type = "text/css" href="addRecipe.css" title = "style">
+        <script src="addRecipe_client_side.js"></script>
     </head>
     <body>
 
@@ -22,36 +23,38 @@
             <img src="New folder/breakfast-bowl.jpg" alt="breakfast-bowl" class="breakfast-bowl"/> 
             <img src="New folder/pasta-lunch.jpg" alt="pasta" class="pasta-lunch"/>
             <img src="New folder/dinner-meal.jpg" alt="dinner" class="dinner-meal"/>
-        <div class = "page">
-        <form>
-            <label for ="recipeTitle"> Name of Recipe: </label> <br>
-            <input type = "text" id = "recipeTitle" name = "recipeTitle"><br>
-            <br>
-            <label for ="sdescription"> Short description: </label> <br>
-            <textarea type = "text" id = "sdescription" name = "sdescription"></textarea>
-            <br>
-            <p>Meal Category</p>
-            <input type ="radio" id = "bfastCategory" name = "mealCategory" value = "Breakfast">
-            <label for ="bfastCategory">Breakfast</label> <br>
-            <input type ="radio" id = "lunchCategory" name = "mealCategory" value = "Lunch">
-            <label for ="lunchCategory">Lunch</label> <br>
-            <input type ="radio" id = "dinnerCategory" name = "mealCategory" value = "Dinner">
-            <label for ="dinnerCategory">Dinner</label><br>
-            <br>
-            <br>
+            <div class="page">
+                <form id="recipeForm">
+                    <label for="recipeTitle">Name of Recipe:</label><br>
+                    <input type="text" id="recipeTitle" name="recipeTitle" required><br><br>
+        
+                    <label for="sdescription">Short description:</label><br>
+                    <textarea id="sdescription" name="sdescription" required></textarea><br><br>
+        
+                    <p>Meal Category:</p>
+                    <input type="radio" id="bfastCategory" name="mealCategory" value="Breakfast">
+                    <label for="bfastCategory">Breakfast</label><br>
+                    <input type="radio" id="lunchCategory" name="mealCategory" value="Lunch">
+                    <label for="lunchCategory">Lunch</label><br>
+                    <input type="radio" id="dinnerCategory" name="mealCategory" value="Dinner">
+                    <label for="dinnerCategory">Dinner</label><br><br>
+        
+                    <label for="keRequirements">Kitchen Equipment Requirements:</label><br>
+                    <textarea id="keRequirements" name="keRequirements" required></textarea><br>
+        
+                    <label for="ingredients">Ingredients:</label><br>
+                    <textarea id="ingredients" name="ingredients" required></textarea><br>
+        
+                    <label for="procedure">Procedure:</label><br>
+                    <textarea id="procedure" name="procedure" required></textarea><br><br>
+        
+                    <input type="button" value="Submit" onclick="submitRecipe()">
 
-            <label for ="keRequirements">Kitchen Equipment Requirements:  </label> <br>
-            <textarea id="keRequirements" name ="keRequirements"> </textarea>
-            <br>
-            <label for ="ingredients">Ingredients:  </label> <br>
-            <textarea id="ingredients" name ="ingredients"> </textarea>
-            <br>
-            <label for ="procedure">Procedure:  </label> <br>
-            <textarea id="procedure" name ="procedure"> </textarea>
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
-         </div>
+                    
+                </form>
+            </div>
+            <div>
+                <button onclick="readFromLocalStorage()">Storage</button>
+            </div>
     </body>
 </html>
