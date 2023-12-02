@@ -29,16 +29,29 @@ function submitRecipe() {
 
 }
 
+/*
 function readFromLocalStorage() {
   let textsource = localStorage.getItem('recipes');
   const obj = JSON.parse(textsource);
   let text = obj.recipes[0].recipeTitle;
   alert(text);
 }
+*/
+
+function readFromSession() {
+
+  const recipesJSONText = sessionStorage.getItem('recipes');
+  alert(recipesJSONText);
+
+}
 
 function onloadIndex() {
 
-  let recipesJSONText = '{"recipes" : [' +
+  let recipesJSONTextCurrent = sessionStorage.getItem('recipes');
+
+  if (recipesJSONTextCurrent == null ) {
+
+    let recipesJSONText = '{"recipes" : [' +
     //first recipe
     ' { "recipeTitle": "Breakfast Recipe"' +
     ' , "sdescription": "Breakfast Description"' +
@@ -61,9 +74,11 @@ function onloadIndex() {
     ' , "ingredients": "Dinner Ingredients"' +
     ', "procedures": "Dinner Procedures" }  ] }';
 
-  alert(recipesJSONText);
+    alert(recipesJSONText);
 
-  sessionStorage.setItem('recipes', recipesJSONText);
+    sessionStorage.setItem('recipes', recipesJSONText);
+
+  }
 
 
 }
