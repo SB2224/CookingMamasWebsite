@@ -31,29 +31,32 @@ function readFromLocalStorage() {
 
 function onload() {
 
-  alert("Onload Worked!");
-
   let recipesJSONText = '{"recipes" : [' + 
   //first recipe
-  ' { "recipeTitle": "Default1 Recipe"' +
-  ' , "sdescription": "Default1 Description"' +
+  ' { "recipeTitle": "Breakfast Recipe"' +
+  ' , "sdescription": "Breakfast Description"' +
   ' ,"mealCategory": "Breakfast"' +
-  ' , "keRequirements": "Default1 Requirements"' +
-  ' , "ingredients": "Default1 Ingredients"' +
-  ' , "procedures": "Default1 Procedures" }'+
-  //third recipe
-  ' , {"recipeTitle": "Default2 Recipe"' +
-  ' , "sdescription": "Default2 Description"' +
-  ' ,"mealCategory": "Lunch"' +
-  ' , "keRequirements": "Default2 Requirements"' +
-  ' , "ingredients": "Default2 Ingredients"' +
-  ', "procedures": "Default2 Procedures" } ' +
+  ' , "keRequirements": "Breakfast Requirements"' +
+  ' , "ingredients": "Breakfast Ingredients"' +
+  ' , "procedures": "Breakfast Procedures" }'+
   //second recipe
-  ' , {"recipeTitle": "Default2 Recipe"' +
-  ' , "sdescription": "Default2 Description"' +
+  ' , {"recipeTitle": "Lunch Recipe"' +
+  ' , "sdescription": "Lunch Description"' +
+  ' ,"mealCategory": "Lunch"' +
+  ' , "keRequirements": "Lunch Requirements"' +
+  ' , "ingredients": "Lunch Ingredients"' +
+  ', "procedures": "Lunch Procedures" } ' +
+  //third recipe
+  ' , {"recipeTitle": "Dinner Recipe"' +
+  ' , "sdescription": "Dinner Description"' +
   ' ,"mealCategory": "Dinner"' +
-  ' , "keRequirements": "Default2 Requirements"' +
-  ' , "ingredients": "Default2 Ingredients"' +
-  ', "procedures": "Default2 Procedures" }  ] }';
+  ' , "keRequirements": "Dinner Requirements"' +
+  ' , "ingredients": "Dinner Ingredients"' +
+  ', "procedures": "Dinner Procedures" }  ] }';
+
+  alert(recipesJSONText);
+
+  sessionStorage.setItem('recipes', recipesJSONText);
+
 
 }
