@@ -13,12 +13,8 @@ function submitRecipe() {
 
   //let pumpkinPie = '{"pumpkin pie" : [' + ' { "recipeTitle": recipeTitle , "sdescription": sdescription,"mealCategory": mealCategory , "keRequirements": keRequirements , "ingredients": ingredients , "procedures": procedure } ] }' ;
 
-  let recipes = '{"recipes" : [' + ' { "recipeTitle": "' + recipeTitle + '"' +
-    ' , "sdescription": "' + sdescription + '"' +
-    ' ,"mealCategory": "' + mealCategory + '"' +
-    ' , "keRequirements": "' + keRequirements + '"' +
-    ' , "ingredients": "' + ingredients + '"' +
-    ', "procedures": "' + procedure + '" } ] }';
+
+
 
   alert(recipes);
   localStorage.setItem('recipes' , recipes);
@@ -31,4 +27,33 @@ function readFromLocalStorage() {
   const obj = JSON.parse(textsource);
   let text = obj.recipes[0].recipeTitle;
   alert(text);
+}
+
+function onload() {
+
+  alert("Onload Worked!");
+
+  let recipesJSONText = '{"recipes" : [' + 
+  //first recipe
+  ' { "recipeTitle": "Default1 Recipe"' +
+  ' , "sdescription": "Default1 Description"' +
+  ' ,"mealCategory": "Breakfast"' +
+  ' , "keRequirements": "Default1 Requirements"' +
+  ' , "ingredients": "Default1 Ingredients"' +
+  ' , "procedures": "Default1 Procedures" }'+
+  //third recipe
+  ' , {"recipeTitle": "Default2 Recipe"' +
+  ' , "sdescription": "Default2 Description"' +
+  ' ,"mealCategory": "Lunch"' +
+  ' , "keRequirements": "Default2 Requirements"' +
+  ' , "ingredients": "Default2 Ingredients"' +
+  ', "procedures": "Default2 Procedures" } ' +
+  //second recipe
+  ' , {"recipeTitle": "Default2 Recipe"' +
+  ' , "sdescription": "Default2 Description"' +
+  ' ,"mealCategory": "Dinner"' +
+  ' , "keRequirements": "Default2 Requirements"' +
+  ' , "ingredients": "Default2 Ingredients"' +
+  ', "procedures": "Default2 Procedures" }  ] }';
+
 }
