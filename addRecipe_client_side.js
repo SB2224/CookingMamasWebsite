@@ -97,41 +97,48 @@ function onloadBreakfast() {
   for (let i = 0; i < 6; i++) {
     let title = recipesJSONObject.recipes[i].recipeTitle;
     let description = recipesJSONObject.recipes[i].sdescription;
+    let meal = recipesJSONObject.recipes[i].mealCategory;
 
     let titleId = "rtitle" + i;
     let descriptionId = "description" + i;
 
-    if (i === 0) {
-      document.getElementById(titleId).innerText = title;
-      document.getElementById(descriptionId).innerText = description;
-    } else if (i === 1) {
-      document.getElementById(titleId).innerText = title;
-      document.getElementById(descriptionId).innerText = description;
-    } else if (i === 2) {
-      document.getElementById(titleId).innerText = title;
-      document.getElementById(descriptionId).innerText = description;
-    } else if (i === 3) {
-      document.getElementById(titleId).innerText = title;
-      document.getElementById(descriptionId).innerText = description;
-    } else if (i === 4) {
-      document.getElementById(titleId).innerText = title;
-      document.getElementById(descriptionId).innerText = description;
-    } else if (i === 5) {
-      document.getElementById(titleId).innerText = title;
-      document.getElementById(descriptionId).innerText = description;
-  }
-    // checks if the blue divs has text value in it. if none it stays hidden
- let indiv= "individual" + i;
-
-  var myDiv = document.getElementByClass(indiv);
-
-    if(myDiv.innerText.trim() === ""){
-            myDiv.classList.remove(indiv);
-}else{
-      myDiv.classList.add(indiv);
-    }
-}
+      if (i === 0) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 1) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 2) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 3) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 4) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 5) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      }
+      
+    /*
+      // checks if the blue divs has text value in it. if none it stays hidden
+      let indiv = "individual" + i;
   
+      var myDiv = document.getElementByClass(indiv);
+  
+      var currentTitle = document.getElementById(titleId).innerText;
+      alert(currentTitle);
+      
+      if (currentTitle === "Title") {
+        myDiv.style.display = "none";
+      } 
+    */
+    
+    
+  }
+
 }
 
 function onclickRecipe(currentId) {
@@ -162,7 +169,7 @@ function onclickRecipe(currentId) {
 
       indexText = JSON.stringify(indexObject);
 
-      var newIndexText = indexText.substring(0,11) +  indexText.substring(23,indexText.length);
+      var newIndexText = indexText.substring(0, 11) + indexText.substring(23, indexText.length);
 
       alert(newIndexText);
 
