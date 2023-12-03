@@ -74,9 +74,17 @@ function onloadIndex() {
     ' , "ingredients": "Dinner Ingredients"' +
     ', "procedures": "Dinner Procedures" }  ] }';
 
+    let indexText = '{ "index" : [' +
+    '{ "value":"0" },' +
+    '{ "value":"1" },' +
+    '{ "value":"2" } ]}';
+
     alert(recipesJSONText);
 
     sessionStorage.setItem('recipes', recipesJSONText);
+    sessionStorage.setItem('index', indexText);
+
+    alert(indexText);
 
   }
 
@@ -93,6 +101,20 @@ function onloadBreakfast() {
   let title = recipesJSONObject.recipes[0].recipeTitle;
 
   document.getElementById("rtitle").innerHTML = title;
+
+}
+
+function recipeOnload() {
+
+  let indexText = sessionStorage.getItem('index');
+  const indexObject = JSON.parse(indexText);
+
+  const pets = ["Cat", "Dog", "Fish"];
+
+  let currentValue = indexObject.index[2].value;
+
+  alert(pets[currentValue]);
+
 
 }
 
