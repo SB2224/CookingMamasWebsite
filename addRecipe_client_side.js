@@ -6,7 +6,7 @@ function submitRecipe() {
   var mealCategory = document.querySelector('input[name="mealCategory"]:checked').value;
   var keRequirements = document.getElementById("keRequirements").value;
   var ingredients = document.getElementById("ingredients").value;
-  var procedure = document.getElementById("procedure").value;
+  var procedures = document.getElementById("procedure").value;
 
   let recipesJSONText = sessionStorage.getItem('recipes');
   const recipesJSONObject = JSON.parse(recipesJSONText);
@@ -17,7 +17,7 @@ function submitRecipe() {
     "mealCategory": mealCategory,
     "keRequirements": keRequirements,
     "ingredients": ingredients,
-    "procedure": procedure
+    "procedures": procedures
   });
 
   recipesJSONText = JSON.stringify(recipesJSONObject);
@@ -192,17 +192,17 @@ function onloadRecipe() {
 
   let recipesJSONText = sessionStorage.getItem('recipes');
   const recipesJSONObject = JSON.parse(recipesJSONText);
-  let recipeName = recipesJSONObject.recipes[currentValue].recipeTitle;
-  let description = recipesJSONObject.recipes[currentValue].description;
+  let recipeTitle = recipesJSONObject.recipes[currentValue].recipeTitle;
+  let sdescription = recipesJSONObject.recipes[currentValue].sdescription;
   let keRequirements = recipesJSONObject.recipes[currentValue].keRequirements;
   let ingredients = recipesJSONObject.recipes[currentValue].ingredients;
-  let procedure = recipesJSONObject.recipes[currentValue].procedure;
+  let procedures = recipesJSONObject.recipes[currentValue].procedures;
 
-  document.getElementById("recipeName").innerHTML = recipeName;
-  document.getElementById("description").innerHTML = description;
+  document.getElementById("recipeTitle").innerHTML = recipeTitle;
+  document.getElementById("sdescription").innerHTML = sdescription;
   document.getElementById("keRequirements").innerHTML = keRequirements;
   document.getElementById("ingredients").innerHTML = ingredients;
-  document.getElementById("procedure").innerHTML = procedure;
+  document.getElementById("procedures").innerHTML = procedures;
 
 }
 
