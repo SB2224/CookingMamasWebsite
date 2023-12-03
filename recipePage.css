@@ -57,14 +57,30 @@ h1{
 #keRequirements{
     background: pink;
     border-radius: 5px;
+    text-align: center; 
+    letter-spacing: 5px;
+    font-size: 20px;
 }
 
 #ingredients{
     background: pink;
     border-radius: 5px;
+    text-align: center; 
+    letter-spacing: 5px;
+    font-size: 20px;
 }
 
 #procedure{
     background: pink;
     border-radius: 5px;
+    text-align: center; 
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#description{
+    text-align: center; 
+    letter-spacing: 5px;
+    font-size: 20px;
+    
 }
