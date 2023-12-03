@@ -75,16 +75,12 @@ function onloadIndex() {
     ', "procedures": "Dinner Procedures" }  ] }';
 
     let indexText = '{ "index" : [' +
-    '{ "value":"0" },' +
-    '{ "value":"1" },' +
-    '{ "value":"2" } ]}';
+    '{ "value":"0" } ]}';
 
     alert(recipesJSONText);
 
     sessionStorage.setItem('recipes', recipesJSONText);
     sessionStorage.setItem('index', indexText);
-
-    alert(indexText);
 
   }
 
@@ -95,8 +91,6 @@ function onloadBreakfast() {
 
   let recipesJSONText = sessionStorage.getItem('recipes');
 
-  alert(recipesJSONText);
-
   const recipesJSONObject = JSON.parse(recipesJSONText);
   let title = recipesJSONObject.recipes[0].recipeTitle;
 
@@ -104,16 +98,31 @@ function onloadBreakfast() {
 
 }
 
-function recipeOnload() {
+function onclickRecipe() {
+
+  title = document.getElementById("rtitle").innerText;
+  alert(title);
+
+  let recipesJSONText = sessionStorage.getItem('recipes');
+  const recipesJSONObject = JSON.parse(recipesJSONText);
+
+  length = recipesJSONObject.recipes.length;
+
+  alert(length);
+
+  for(let i )
+
+
+}
+
+function getIndex() {
 
   let indexText = sessionStorage.getItem('index');
   const indexObject = JSON.parse(indexText);
 
-  const pets = ["Cat", "Dog", "Fish"];
+  let currentValue = indexObject.index[0].value;
 
-  let currentValue = indexObject.index[2].value;
-
-  alert(pets[currentValue]);
+  alert(currentValue);
 
 
 }
