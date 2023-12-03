@@ -179,6 +179,23 @@ function onclickRecipe(currentId) {
 
 function onloadRecipe() {
 
+  let indexText = sessionStorage.getItem('index');
+  const indexObject = JSON.parse(indexText);
+  let currentValue = indexObject.index[0].value;
+
+  let recipesJSONText = sessionStorage.getItem('recipes');
+  const recipesJSONObject = JSON.parse(recipesJSONText);
+  let recipeName = recipesJSONObject.recipes[currentValue].recipeTitle;
+  let description = recipesJSONObject.recipes[currentValue].description;
+  let keRequirements = recipesJSONObject.recipes[currentValue].keRequirements;
+  let ingredients = recipesJSONObject.recipes[currentValue].ingredients;
+  let procedure = recipesJSONObject.recipes[currentValue].procedure;
+
+  document.getElementById("recipeName").innerHTML = recipeName;
+  document.getElementById("description").innerHTML = description;
+  document.getElementById("keRequirements").innerHTML = keRequirements;
+  document.getElementById("ingredients").innerHTML = ingredients;
+  document.getElementById("procedure").innerHTML = procedure;
 
 }
 
