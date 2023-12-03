@@ -99,8 +99,8 @@ function onloadBreakfast() {
 
 
     if (i === 0) {
-        document.getElementById("rtitle").innerText = title;
-        document.getElementById("description").innerText = description;
+        document.getElementById("rtitle0").innerText = title;
+        document.getElementById("description0").innerText = description;
     } else if (i === 1) {
         document.getElementById("rtitle1").innerText = title;
         document.getElementById("description1").innerText= description;
@@ -123,7 +123,7 @@ function onloadBreakfast() {
 
 function onclickRecipe() {
 
-  title = document.getElementById("rtitle4").innerText;
+  title = document.getElementById("rtitle").innerText;
   alert(title);
 
   let recipesJSONText = sessionStorage.getItem('recipes');
