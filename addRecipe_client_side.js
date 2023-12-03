@@ -121,9 +121,9 @@ function onloadBreakfast() {
   
 }
 
-function onclickRecipe() {
+function onclickRecipe(currentId) {
 
-  title = document.getElementById("rtitle4").innerText;
+  title = document.getElementById(currentId).innerText;
   alert(title);
 
   let recipesJSONText = sessionStorage.getItem('recipes');
