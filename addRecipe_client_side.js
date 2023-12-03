@@ -52,11 +52,11 @@ function onloadIndex() {
 
     let recipesJSONText = '{"recipes" : [' +
       //first recipe
-      ' { "recipeTitle": "Breakfast Recipe"' +
-      ' , "sdescription": "Breakfast Description"' +
+      ' { "recipeTitle": "Pancakes"' +
+      ' , "sdescription": "Fluffy batter baked in a flat pan."' +
       ' ,"mealCategory": "Breakfast"' +
-      ' , "keRequirements": "Breakfast Requirements"' +
-      ' , "ingredients": "Breakfast Ingredients"' +
+      ' , "keRequirements": "Frying Pan <br>Measuring Cups <br>Mixing Bowls <br>Spatula <br>Stove"' +
+      ' , "ingredients": "Flour (2 Cups) <br>White Sugar (1/4 Cup) <br>Baking Powder (4 Teaspoons) <br>Baking Soda (1/4 Teaspoon) <br>Salt (1/2 Teaspoon) <br>Milk (1 3/4 Cups) <br>Butter (1/4 Cup) <br>Pure Vanilla Extract (2 Teaspoons) <br>One Large Egg"' +
       ' , "procedures": "Breakfast Procedures" }' +
       //second recipe
       ' , {"recipeTitle": "Lunch Recipe"' +
