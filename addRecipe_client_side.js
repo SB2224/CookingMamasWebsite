@@ -126,8 +126,8 @@ function onloadBreakfast() {
         document.getElementById(descriptionId).innerText = description;
       }
 
-    j++;
-      
+      j++;
+
       /*
       // checks if the blue divs has text value in it. if none it stays hidden
       let indiv = "individual" + i;
@@ -140,11 +140,131 @@ function onloadBreakfast() {
         myDiv.style.display = "none";
       } 
     */
-    
-    
-  }
 
+
+    }
+
+  }
 }
+
+function onloadLunch() {
+
+  let recipesJSONText = sessionStorage.getItem('recipes');
+
+  const recipesJSONObject = JSON.parse(recipesJSONText);
+  length = recipesJSONObject.recipes.length;
+  var j = 0;
+
+  // for the title and description to show on meal page
+  for (let i = 0; i < length; i++) {
+    let title = recipesJSONObject.recipes[i].recipeTitle;
+    let description = recipesJSONObject.recipes[i].sdescription;
+    let meal = recipesJSONObject.recipes[i].mealCategory;
+
+    if (meal == "Lunch") {
+
+      let titleId = "rtitle" + j;
+      let descriptionId = "description" + j;
+
+      if (i === 0) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 1) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 2) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 3) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 4) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 5) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      }
+
+      j++;
+
+      /*
+      // checks if the blue divs has text value in it. if none it stays hidden
+      let indiv = "individual" + i;
+  
+      var myDiv = document.getElementByClass(indiv);
+  
+      var currentTitle = document.getElementById(titleId).innerText;
+      
+      if (currentTitle === " ") {
+        myDiv.style.display = "none";
+      } 
+    */
+
+
+    }
+
+  }
+}
+
+function onloadDinner() {
+
+  let recipesJSONText = sessionStorage.getItem('recipes');
+
+  const recipesJSONObject = JSON.parse(recipesJSONText);
+  length = recipesJSONObject.recipes.length;
+  var j = 0;
+
+  // for the title and description to show on meal page
+  for (let i = 0; i < length; i++) {
+    let title = recipesJSONObject.recipes[i].recipeTitle;
+    let description = recipesJSONObject.recipes[i].sdescription;
+    let meal = recipesJSONObject.recipes[i].mealCategory;
+
+    if (meal == "Dinner") {
+
+      let titleId = "rtitle" + j;
+      let descriptionId = "description" + j;
+
+      if (i === 0) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 1) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 2) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 3) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 4) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      } else if (i === 5) {
+        document.getElementById(titleId).innerText = title;
+        document.getElementById(descriptionId).innerText = description;
+      }
+
+      j++;
+
+      /*
+      // checks if the blue divs has text value in it. if none it stays hidden
+      let indiv = "individual" + i;
+  
+      var myDiv = document.getElementByClass(indiv);
+  
+      var currentTitle = document.getElementById(titleId).innerText;
+      
+      if (currentTitle === " ") {
+        myDiv.style.display = "none";
+      } 
+    */
+
+
+    }
+
+  }
 }
 
 function onclickRecipe(currentId) {
