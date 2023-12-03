@@ -89,7 +89,7 @@ function onloadBreakfast() {
   const recipesJSONObject = JSON.parse(recipesJSONText);
 
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     let title = recipesJSONObject.recipes[i].recipeTitle;
     let description = recipesJSONObject.recipes[i].sdescription;
 
@@ -109,7 +109,10 @@ function onloadBreakfast() {
     } else if (i === 4) {
         document.getElementById("rtitle4").innerText = title;
         document.getElementById("description4").innerHTML = description;
-    }
+    } else if (i === 5) {
+      document.getElementById("rtitle5").innerText = title;
+      document.getElementById("description5").innerHTML = description;
+  }
 }
   
 }
