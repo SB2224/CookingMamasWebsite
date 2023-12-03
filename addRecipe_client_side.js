@@ -97,25 +97,27 @@ function onloadBreakfast() {
     let title = recipesJSONObject.recipes[i].recipeTitle;
     let description = recipesJSONObject.recipes[i].sdescription;
 
+    let titleId = "rtitle" + i;
+    let descriptionId = "description" + i;
 
     if (i === 0) {
-        document.getElementById("rtitle").innerText = title;
-        document.getElementById("description").innerText = description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
     } else if (i === 1) {
-        document.getElementById("rtitle1").innerText = title;
-        document.getElementById("description1").innerText= description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
     } else if (i === 2) {
-        document.getElementById("rtitle2").innerText = title;
-        document.getElementById("description2").innerText = description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
     } else if (i === 3) {
-        document.getElementById("rtitle3").innerText = title;
-        document.getElementById("description3").innerText = description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
     } else if (i === 4) {
-        document.getElementById("rtitle4").innerText = title;
-        document.getElementById("description4").innerText = description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
     } else if (i === 5) {
-      document.getElementById("rtitle5").innerText = title;
-      document.getElementById("description5").innerText = description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
   }
 }
   
