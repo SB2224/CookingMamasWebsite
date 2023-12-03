@@ -93,7 +93,7 @@ function onloadBreakfast() {
 
   const recipesJSONObject = JSON.parse(recipesJSONText);
 
-
+  // for the title and description to show on meal page
   for (let i = 0; i < 6; i++) {
     let title = recipesJSONObject.recipes[i].recipeTitle;
     let description = recipesJSONObject.recipes[i].sdescription;
@@ -119,9 +119,19 @@ function onloadBreakfast() {
     } else if (i === 5) {
       document.getElementById(titleId).innerText = title;
       document.getElementById(descriptionId).innerText = description;
-    }
   }
+  // checks if the blue divs has text value in it. if none it stays hidden
+  let indiv= "individual" + i;
 
+  var myDiv = document.getElementByClass(indiv);
+
+    if(myDiv.innerText.trim() === ""){
+      myDiv.classList.remove(indiv);
+    }else{
+      myDiv.classList.add(indiv);
+    }
+}
+  
 }
 
 function onclickRecipe(currentId) {
