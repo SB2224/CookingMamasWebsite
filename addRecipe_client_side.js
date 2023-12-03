@@ -129,7 +129,6 @@ function onloadBreakfast() {
       var myDiv = document.getElementByClass(indiv);
   
       var currentTitle = document.getElementById(titleId).innerText;
-      alert(currentTitle);
       
       if (currentTitle === "Title") {
         myDiv.style.display = "none";
