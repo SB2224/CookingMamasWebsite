@@ -120,14 +120,14 @@ function onloadBreakfast() {
       document.getElementById(titleId).innerText = title;
       document.getElementById(descriptionId).innerText = description;
   }
-  // checks if the blue divs has text value in it. if none it stays hidden
-  let indiv= "individual" + i;
+    // checks if the blue divs has text value in it. if none it stays hidden
+ let indiv= "individual" + i;
 
   var myDiv = document.getElementByClass(indiv);
 
     if(myDiv.innerText.trim() === ""){
-      myDiv.classList.remove(indiv);
-    }else{
+            myDiv.classList.remove(indiv);
+}else{
       myDiv.classList.add(indiv);
     }
 }
