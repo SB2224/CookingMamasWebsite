@@ -122,7 +122,7 @@ function onloadBreakfast() {
         document.getElementById(descriptionId).innerText = description;
       }
       
-    /*
+      /*
       // checks if the blue divs has text value in it. if none it stays hidden
       let indiv = "individual" + i;
   
@@ -130,11 +130,9 @@ function onloadBreakfast() {
   
       var currentTitle = document.getElementById(titleId).innerText;
       
-      if (currentTitle === "Title") {
+      if (currentTitle === " ") {
         myDiv.style.display = "none";
-      } 
-    */
-    
+      }*/
     
   }
 
