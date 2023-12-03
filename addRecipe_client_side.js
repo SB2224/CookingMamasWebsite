@@ -95,19 +95,19 @@ function onloadBreakfast() {
 
 
     if (i === 0) {
-        document.getElementById("rtitle").innerHTML = title;
+        document.getElementById("rtitle").innerText = title;
         document.getElementById("description").innerHTML = description;
     } else if (i === 1) {
-        document.getElementById("rtitle1").innerHTML = title;
+        document.getElementById("rtitle1").innerText = title;
         document.getElementById("description1").innerHTML = description;
     } else if (i === 2) {
-        document.getElementById("rtitle2").innerHTML = title;
+        document.getElementById("rtitle2").innerText = title;
         document.getElementById("description2").innerHTML = description;
     } else if (i === 3) {
-        document.getElementById("rtitle3").innerHTML = title;
+        document.getElementById("rtitle3").innerText = title;
         document.getElementById("description3").innerHTML = description;
     } else if (i === 4) {
-        document.getElementById("rtitle4").innerHTML = title;
+        document.getElementById("rtitle4").innerText = title;
         document.getElementById("description4").innerHTML = description;
     }
 }
