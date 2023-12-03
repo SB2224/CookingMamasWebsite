@@ -120,7 +120,7 @@ function onloadBreakfast() {
 
 function onclickRecipe() {
 
-  title = document.getElementById("rtitle").innerText;
+  title = document.getElementById("rtitle4").innerText;
   alert(title);
 
   let recipesJSONText = sessionStorage.getItem('recipes');
@@ -130,7 +130,17 @@ function onclickRecipe() {
 
   alert(length);
 
-  for(let i )
+  for(let i = 0; i < length; i++ ) {
+
+    var currentTitle = recipesJSONObject.recipes[i].recipeTitle;
+
+    if (title == currentTitle) {
+
+      alert(i);
+
+    }
+
+  }
 
 
 }
