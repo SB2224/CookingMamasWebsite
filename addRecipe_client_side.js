@@ -11,14 +11,14 @@ function submitRecipe() {
   let recipesJSONText = sessionStorage.getItem('recipes');
   const recipesJSONObject = JSON.parse(recipesJSONText);
 
-    recipesJSONObject['recipes'].push({
-      "recipeTitle": recipeTitle,
-      "sdescription": sdescription,
-      "mealCategory": mealCategory,
-      "keRequirements": keRequirements,
-      "ingredients": ingredients,
-      "procedure": procedure
-    });
+  recipesJSONObject['recipes'].push({
+    "recipeTitle": recipeTitle,
+    "sdescription": sdescription,
+    "mealCategory": mealCategory,
+    "keRequirements": keRequirements,
+    "ingredients": ingredients,
+    "procedure": procedure
+  });
 
   recipesJSONText = JSON.stringify(recipesJSONObject);
 
@@ -48,33 +48,33 @@ function onloadIndex() {
 
   let recipesJSONTextCurrent = sessionStorage.getItem('recipes');
 
-  if (recipesJSONTextCurrent == null ) {
+  if (recipesJSONTextCurrent == null) {
 
     let recipesJSONText = '{"recipes" : [' +
-    //first recipe
-    ' { "recipeTitle": "Breakfast Recipe"' +
-    ' , "sdescription": "Breakfast Description"' +
-    ' ,"mealCategory": "Breakfast"' +
-    ' , "keRequirements": "Breakfast Requirements"' +
-    ' , "ingredients": "Breakfast Ingredients"' +
-    ' , "procedures": "Breakfast Procedures" }' +
-    //second recipe
-    ' , {"recipeTitle": "Lunch Recipe"' +
-    ' , "sdescription": "Lunch Description"' +
-    ' ,"mealCategory": "Lunch"' +
-    ' , "keRequirements": "Lunch Requirements"' +
-    ' , "ingredients": "Lunch Ingredients"' +
-    ', "procedures": "Lunch Procedures" } ' +
-    //third recipe
-    ' , {"recipeTitle": "Dinner Recipe"' +
-    ' , "sdescription": "Dinner Description"' +
-    ' ,"mealCategory": "Dinner"' +
-    ' , "keRequirements": "Dinner Requirements"' +
-    ' , "ingredients": "Dinner Ingredients"' +
-    ', "procedures": "Dinner Procedures" }  ] }';
+      //first recipe
+      ' { "recipeTitle": "Breakfast Recipe"' +
+      ' , "sdescription": "Breakfast Description"' +
+      ' ,"mealCategory": "Breakfast"' +
+      ' , "keRequirements": "Breakfast Requirements"' +
+      ' , "ingredients": "Breakfast Ingredients"' +
+      ' , "procedures": "Breakfast Procedures" }' +
+      //second recipe
+      ' , {"recipeTitle": "Lunch Recipe"' +
+      ' , "sdescription": "Lunch Description"' +
+      ' ,"mealCategory": "Lunch"' +
+      ' , "keRequirements": "Lunch Requirements"' +
+      ' , "ingredients": "Lunch Ingredients"' +
+      ', "procedures": "Lunch Procedures" } ' +
+      //third recipe
+      ' , {"recipeTitle": "Dinner Recipe"' +
+      ' , "sdescription": "Dinner Description"' +
+      ' ,"mealCategory": "Dinner"' +
+      ' , "keRequirements": "Dinner Requirements"' +
+      ' , "ingredients": "Dinner Ingredients"' +
+      ', "procedures": "Dinner Procedures" }  ] }';
 
     let indexText = '{ "index" : [' +
-    '{ "value":"0" } ]}';
+      '{ "value":"0" } ]}';
 
     alert(recipesJSONText);
 
@@ -145,19 +145,30 @@ function onclickRecipe(currentId) {
 
   alert(length);
 
-  for(let i = 0; i < length; i++ ) {
+  for (let i = 0; i < length; i++) {
 
     var currentTitle = recipesJSONObject.recipes[i].recipeTitle;
 
     if (title == currentTitle) {
 
       alert(i);
+      let indexText = sessionStorage.getItem('index');
+      const indexObject = JSON.parse(indexText);
+
+      indexObject['index'].push({
+        "recipeTitle": recipeTitle
+      });
 
     }
 
   }
 
   window.location.href = "recipePage.html";
+
+
+}
+
+function onloadRecipe() {
 
 
 }
