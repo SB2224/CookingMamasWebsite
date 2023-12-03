@@ -86,12 +86,31 @@ function onloadBreakfast() {
 
   let recipesJSONText = sessionStorage.getItem('recipes');
 
-  alert(recipesJSONText);
-
   const recipesJSONObject = JSON.parse(recipesJSONText);
-  let title = recipesJSONObject.recipes[0].recipeTitle;
 
-  document.getElementById("rtitle").innerHTML = title;
 
+  for (let i = 0; i < 5; i++) {
+    let title = recipesJSONObject.recipes[i].recipeTitle;
+    let description = recipesJSONObject.recipes[i].sdescription;
+
+
+    if (i === 0) {
+        document.getElementById("rtitle").innerHTML = title;
+        document.getElementById("description").innerHTML = description;
+    } else if (i === 1) {
+        document.getElementById("rtitle1").innerHTML = title;
+        document.getElementById("description1").innerHTML = description;
+    } else if (i === 2) {
+        document.getElementById("rtitle2").innerHTML = title;
+        document.getElementById("description2").innerHTML = description;
+    } else if (i === 3) {
+        document.getElementById("rtitle3").innerHTML = title;
+        document.getElementById("description3").innerHTML = description;
+    } else if (i === 4) {
+        document.getElementById("rtitle4").innerHTML = title;
+        document.getElementById("description4").innerHTML = description;
+    }
+}
+  
 }
 
