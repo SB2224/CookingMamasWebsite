@@ -101,8 +101,8 @@ function onloadBreakfast() {
     let descriptionId = "description" + i;
 
     if (i === 0) {
-        document.getElementById(titleId).innerText = title;
-        document.getElementById(descriptionId).innerText = description;
+      document.getElementById(titleId).innerText = title;
+      document.getElementById(descriptionId).innerText = description;
     } else if (i === 1) {
       document.getElementById(titleId).innerText = title;
       document.getElementById(descriptionId).innerText = description;
