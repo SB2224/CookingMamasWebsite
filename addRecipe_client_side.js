@@ -74,9 +74,10 @@ function onloadIndex() {
       ', "procedures": "Dinner Procedures" }  ] }';
 
     let indexText = '{ "index" : [' +
-      '{ "value":"0" } ]}';
+      '{ "value": 0 } ]}';
 
     alert(recipesJSONText);
+    alert(indexText);
 
     sessionStorage.setItem('recipes', recipesJSONText);
     sessionStorage.setItem('index', indexText);
@@ -146,8 +147,16 @@ function onclickRecipe(currentId) {
       const indexObject = JSON.parse(indexText);
 
       indexObject['index'].push({
-        "recipeTitle": recipeTitle
+        "value": i
       });
+
+      indexText = JSON.stringify(indexObject);
+
+      var newIndexText = indexText.substring(0,11) +  indexText.substring(23,indexText.length);
+
+      alert(newIndexText);
+
+      sessionStorage.setItem('index', newIndexText);
 
     }
 
