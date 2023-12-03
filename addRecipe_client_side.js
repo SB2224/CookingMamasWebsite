@@ -147,6 +147,8 @@ function onclickRecipe(currentId) {
 
   }
 
+  window.location.href = "recipePage.html";
+
 
 }
 
