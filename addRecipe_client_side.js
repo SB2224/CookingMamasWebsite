@@ -270,22 +270,21 @@ function onloadDinner() {
 function onclickRecipe(currentId) {
 
   title = document.getElementById(currentId).innerText;
-  alert(title);
+  //alert(title);
 
   let recipesJSONText = sessionStorage.getItem('recipes');
   const recipesJSONObject = JSON.parse(recipesJSONText);
 
   length = recipesJSONObject.recipes.length;
 
-  alert(length);
+  //alert(length);
 
   for (let i = 0; i < length; i++) {
 
     var currentTitle = recipesJSONObject.recipes[i].recipeTitle;
 
     if (title == currentTitle) {
-
-      alert(i);
+      //alert(i);
       let indexText = sessionStorage.getItem('index');
       const indexObject = JSON.parse(indexText);
 
@@ -297,7 +296,7 @@ function onclickRecipe(currentId) {
 
       var newIndexText = indexText.substring(0, 11) + indexText.substring(23, indexText.length);
 
-      alert(newIndexText);
+      //alert(newIndexText);
 
       sessionStorage.setItem('index', newIndexText);
 
@@ -342,4 +341,32 @@ function getIndex() {
   alert(currentValue);
 
 
+}
+
+function redirect() {
+  var btnValue = document.getElementById("search").value.toLowerCase();
+  debugger;
+  document.getElementById("search").addEventListener("keyup", function(event) {
+  debugger;
+  event.preventDefault();
+    if(event.key === "Enter") {
+      debugger;
+      if(btnValue.includes("breakfast")) {
+        // redirect to breakfast page
+        window.location.href="breakfast.html";
+      } else if(btnValue.includes("lunch")) {
+        // redirect to lunch page
+        window.location.href="lunch.html";
+      } else if(btnValue.includes("dinner")) {
+        // redirect to dinner page 
+        window.location.href="dinner.html";
+      } else if(btnValue.includes("add")) {
+        // redirect to add recipe page 
+        window.location.href="addRecipe.html";
+      } else {
+        alert("Please specify if the meal is Breakfast, Lunch, Dinner, or if you want to be redirected to the Add Recipe Page.");
+        debugger;
+      }
+    }
+  });
 }

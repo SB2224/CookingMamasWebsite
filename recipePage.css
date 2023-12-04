@@ -84,3 +84,29 @@ h1{
     font-size: 20px;
     
 }
+
+.navigation {
+    background-color:#C8E5F2;
+    padding: 2%;
+    margin: 0;
+    text-align: center;
+    border-radius: 45px;
+}
+
+button {
+    border: 5px solid darkblue;
+    background-color: rgb(194, 237, 255);
+    color: rgb(255, 243, 150);
+    -webkit-text-stroke: 1px darkblue;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 45px;
+}
+
+button:hover {
+    background-color: azure;
+}
+input:hover{
+    background-color: azure;
+}
