@@ -110,3 +110,40 @@ button:hover {
 input:hover{
     background-color: azure;
 }
+
+input {
+    background-color: rgb(194, 237, 255);
+    border: 5px solid darkblue;
+    border-radius: 45px;
+    color: darkblue;
+}
+
+.navigation a {
+
+    color: rgb(255, 243, 150);
+    -webkit-text-stroke: 1px darkblue;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color: blue;
+}
+
+.footer p {
+
+    text-align: center;
+    font-size: 15px;
+    background-color: azure;
+    padding: 2%;
+    width: 96%;
+}
+
+.recipeInfo {
+    background-color: whitesmoke;
+    margin-top: 5%;
+}
