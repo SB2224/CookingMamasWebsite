@@ -28,7 +28,6 @@ body{
 }
 
 [class *="recipe"] {
-    background-color: azure;
     padding: 3%;
     border-radius: 10px;
     z-index:-10;
@@ -54,34 +53,36 @@ h1{
     color: yellowgreen;
 }
 
-#keRequirements{
-    background: pink;
-    border-radius: 5px;
-    text-align: center; 
-    letter-spacing: 5px;
+#heading{
     font-size: 20px;
+    text-align: justify;
+}
+
+#keRequirements{
+    border-radius: 5px;
+    text-align: justify;
+    top: -50px;
+    font-size: 15px;
 }
 
 #ingredients{
-    background: pink;
     border-radius: 5px;
-    text-align: center; 
-    letter-spacing: 5px;
-    font-size: 20px;
+    text-align: justify;
+    top: -50px;
+    font-size: 15px;
 }
 
-#procedure{
-    background: pink;
+#procedures{
     border-radius: 5px;
-    text-align: center; 
-    letter-spacing: 5px;
-    font-size: 20px;
+    text-align: justify;
+    top: -50px;
+    font-size: 15px;
 }
 
 #description{
     text-align: center; 
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 30px;
     
 }
 
