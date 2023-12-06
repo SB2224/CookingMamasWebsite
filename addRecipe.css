@@ -62,19 +62,71 @@ a {
 
 }
 
-input {
+#button2{
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+input,textarea {
     background-color: rgb(194, 237, 255);
-    border: 5px solid darkblue;
-    border-radius: 45px;
+    border: 5px solid white;
+    border-radius: 10px;
     color: darkblue;
+    padding:30px;
 }
 
 h1 {
     text-align: center;
     font-family: meal;
-    background-color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    font-family: meal;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(8, 116, 8);
+    color: yellowgreen;
+
+}
+
+.section{
+    --mask: 
+        linear-gradient(#000 0 0) 50%/calc(100% - 40.70px) calc(100% - 40.70px) no-repeat,
+        radial-gradient(farthest-side,#000 98%,#0000) 0 0/44px 44px round;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+
+        z-index: 10;
+        margin-right:20%;
+        margin-left:20%;
+
+        background-image: url("New folder/table top.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        resize:both;
+
+        padding-top: 20px;
+        padding-bottom:20px;
+       
+}
+
+#recipeForm{
+    margin: 50px;
+    margin-bottom: 80px;;
+}
+
+.page{
+    background-color: azure;
+    border-radius: 5px;
     padding: 30px;
-    border-radius: 15px;
+}
+
+.page2{
+    background-image: url("New folder/food.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    resize:both;
+    margin-left:4%;
 }
 
 .description {
@@ -125,19 +177,23 @@ footer {
 
 #keRequirements{
   width: 500px;
-  height: 300px;;
+  height: 100px;
 }
 
 #ingredients{
   width: 500px;
-  height: 300px;;
+  height: 100px;
 }
 
 #procedure{
   width: 500px;
-  height: 300px;
+  height: 100px;
 }
 
-.page {
-    position: absolute; top: 350px; left: 60px;
+label,p{
+    font-size: 25px;
+}
+
+#bfastCategory{
+    font-size: 17px;
 }

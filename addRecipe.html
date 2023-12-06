@@ -9,7 +9,6 @@
 
         <div class="navigation">
 
-            <input type="text" placeholder="Search" id="search" onkeyup="redirect()">
             <button id="index"><a href="index.html">Homepage</a></button>
             <button id="breakfastButton"><a href="breakfast.html">Breakfast </a></button>
             <button id="lunchButton"><a href="lunch.html">Lunch</a></button>
@@ -17,19 +16,19 @@
             <button id="addRecipe"><a href="addRecipe.html">Add Recipe </a></button>
     
           </div>
-
-        <h1>Add Recipes</h1> 
+ 
         <hr>
-        <div class="section">
-            <img src="New folder/breakfast-bowl.jpg" alt="breakfast-bowl" class="breakfast-bowl"/> 
-            <img src="New folder/pasta-lunch.jpg" alt="pasta" class="pasta-lunch"/>
-            <img src="New folder/dinner-meal.jpg" alt="dinner" class="dinner-meal"/>
-            <div class="page">    
+            <div class="page">  
+            <div class ="page2">
+                <div class="section" >
+                    <h1>Add Recipes</h1> 
                 <form id="recipeForm">
                     <label for="recipeTitle">Name of Recipe:</label><br>
+                    <br>
                     <input type="text" id="recipeTitle" name="recipeTitle" required><br><br>
         
                     <label for="sdescription">Short description:</label><br>
+                    <br>
                     <textarea id="sdescription" name="sdescription" required></textarea><br><br>
         
                     <p>Meal Category:</p>
@@ -41,20 +40,27 @@
                     <label for="dinnerCategory">Dinner</label><br><br>
         
                     <label for="keRequirements">Kitchen Equipment Requirements:</label><br>
+                    <br>
                     <textarea id="keRequirements" name="keRequirements" required></textarea><br>
-        
+                    <br>
                     <label for="ingredients">Ingredients:</label><br>
+                    <br>
                     <textarea id="ingredients" name="ingredients" required></textarea><br>
-        
+                    <br>
                     <label for="procedure">Procedure:</label><br>
+                    <br>
                     <textarea id="procedure" name="procedure" required></textarea><br><br>
         
-                    <input type="button" value="Submit" onclick="submitRecipe()">      
+                    <input id = "button2" type="button" value="Submit" onclick="submitRecipe()"> 
+                    <div>
+                        <br>
+                        <input id = "button2" type="button" onclick="readFromSession()" value="Read">
+                    </div>     
                 </form>
             </div>
         </div>
-            <div>
-                <input type="button" onclick="readFromSession()" value="Read">
             </div>
+        
+            
     </body>
 </html>
