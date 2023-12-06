@@ -57,7 +57,7 @@ function onloadIndex() {
       ' ,"mealCategory": "Breakfast"' +
       ' , "keRequirements": "Frying Pan <br>Measuring Cups <br>Mixing Bowls <br>Spatula <br>Stove"' +
       ' , "ingredients": "Flour (2 Cups) <br>White Sugar (1/4 Cup) <br>Baking Powder (4 Teaspoons) <br>Baking Soda (1/4 Teaspoon) <br>Salt (1/2 Teaspoon) <br>Milk (1 3/4 Cups) <br>Butter (1/4 Cup) <br>Pure Vanilla Extract (2 Teaspoons) <br>One Large Egg"' +
-      ' , "procedures": "Breakfast Procedures" }' +
+      ' , "procedures": "1. To create the batter, mix the ingredients in the mixing bowls <br> 2. The preheat the frying pan for 15 mins. <br> 3. Add a few scops of the batter in the frying pan. <br> 4. Cook the first side for 5 mins. <br> 5. Flip the pancake and cook the other side for 5 mins. <br> 6. Transfer it to a cool plate and enjoy!" }' +
       //second recipe
       ' , {"recipeTitle": "Lunch Recipe"' +
       ' , "sdescription": "Lunch Description"' +
@@ -323,11 +323,12 @@ function onloadRecipe() {
   let ingredients = recipesJSONObject.recipes[currentValue].ingredients;
   let procedures = recipesJSONObject.recipes[currentValue].procedures;
 
-  document.getElementById("recipeTitle").innerHTML = recipeTitle;
+  document.getElementById("recipeTitle").innerHTML = recipeTitle ;
   document.getElementById("sdescription").innerHTML = sdescription;
   document.getElementById("keRequirements").innerHTML = keRequirements;
   document.getElementById("ingredients").innerHTML = ingredients;
   document.getElementById("procedures").innerHTML = procedures;
+
 
 }
 
