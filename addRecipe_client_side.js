@@ -22,8 +22,6 @@ function submitRecipe() {
 
   recipesJSONText = JSON.stringify(recipesJSONObject);
 
-  alert(recipesJSONText);
-
   sessionStorage.setItem('recipes', recipesJSONText);
 
 }
@@ -75,9 +73,6 @@ function onloadIndex() {
 
     let indexText = '{ "index" : [' +
       '{ "value": 0 } ]}';
-
-    alert(recipesJSONText);
-    alert(indexText);
 
     sessionStorage.setItem('recipes', recipesJSONText);
     sessionStorage.setItem('index', indexText);
@@ -270,21 +265,17 @@ function onloadDinner() {
 function onclickRecipe(currentId) {
 
   title = document.getElementById(currentId).innerText;
-  alert(title);
 
   let recipesJSONText = sessionStorage.getItem('recipes');
   const recipesJSONObject = JSON.parse(recipesJSONText);
 
   length = recipesJSONObject.recipes.length;
 
-  alert(length);
-
   for (let i = 0; i < length; i++) {
 
     var currentTitle = recipesJSONObject.recipes[i].recipeTitle;
 
     if (title == currentTitle) {
-      alert(i);
       let indexText = sessionStorage.getItem('index');
       const indexObject = JSON.parse(indexText);
 
@@ -295,8 +286,6 @@ function onclickRecipe(currentId) {
       indexText = JSON.stringify(indexObject);
 
       var newIndexText = indexText.substring(0, 11) + indexText.substring(23, indexText.length);
-
-      alert(newIndexText);
 
       sessionStorage.setItem('index', newIndexText);
 
@@ -338,8 +327,6 @@ function getIndex() {
   const indexObject = JSON.parse(indexText);
 
   let currentValue = indexObject.index[0].value;
-
-  alert(currentValue);
 
 
 }
